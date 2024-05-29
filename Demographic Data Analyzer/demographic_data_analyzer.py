@@ -3,7 +3,7 @@ import pandas as pd
 def calculate_demographic_data(print_data=True):
     # Read data from file
         # Load the dataset
-    df = pd.read_csv('C:/Users/hp/OneDrive/Desktop/Python_Data_Analysis/Demographic Data Analyzer/adult.data.csv')
+    df = pd.read_csv('Demographic Data Analyzer/adult.data.csv')
 
     # Filter out non-numeric ages
     non_numeric_ages = df[~df['age'].astype(str).str.isdigit()]
